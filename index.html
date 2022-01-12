@@ -4,28 +4,43 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../bootstrap-5.1.0-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <script src="../jquery-3.6.0.min.js"></script>
+  <script src="../bootstrap-5.1.0-dist/js/bootstrap.min.js"></script>
+  <title>Meme Generator</title>
 </head>
-<body>
-  <header></header>
-  <main>
-    <label for="text-input">Insira o texto</label>
-    <input id="text-input" type="text" maxlength="60">
+<body >
+
+  <nav id="menu-nav">
+    <a href="../../index.html">Home</a> |
+    <a href="../color-guess/index.html">color-guess</a> |    
+    <a href="../todo-list/index.html">todo-list</a> |
+    <a href="../pixels-art/index.html">paleta de cores</a> |
+    <a href="../meme-generator/index.html">meme-generator</a>
+  </nav>
+  
+  <div id="container">
+    <header><h1>CRIE SEU MEME</h1></header>
+  <main id="main-container">
+    <div id="input-container">
+      <label id="text-label" for="text-input">Insira seu Texto</label>
+      <input id="text-input" type="text" maxlength="60">
+    </div>
     <section id="meme-image-container">
-      <div >
-        <img id="meme-image" src="" alt="">
-        <p id="meme-text"></p> 
-      </div>
+      <img id="meme-image" src="" alt="">
+      <p id="meme-text"></p> 
     </section>
-    <section>
-      <button id="fire">Fire</button>
-      <button id="water">Water</button>
-      <button id="earth">Earth</button>
+    <section id="btn-border">
+      <button id="fire" class="btn-elements">Fire</button>
+      <button id="water" class="btn-elements">Water</button>
+      <button id="earth" class="btn-elements">Earth</button>
     </section>
-    <section>
-      <label for="meme-insert">Carregar IMG</label>
+    <section id="carrega-img">
+      <label class="btn-game" for="meme-insert">Carregue sua imagem
       <input id="meme-insert" type="file">
+      </label>
+      <span id='file-name'>Nenhum arquivo selecionado</span>
     </section>
     <section>
       <img id="meme-1" src="imgs/meme1.png" alt="">
@@ -33,6 +48,7 @@
       <img id="meme-3" src="imgs/meme3.png" alt="">
       <img id="meme-4" src="imgs/meme4.png" alt="">
     </section>
+  </div>
   </main>
 
   <script src="script.js"></script>

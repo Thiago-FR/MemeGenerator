@@ -11,6 +11,9 @@ const fire = document.getElementById('fire');
 const water = document.getElementById('water');
 const earth = document.getElementById('earth');
 
+const inputFile = document.getElementById('meme-insert');
+const fileName = document.getElementById('file-name');
+
 input.addEventListener('input', () => {
   text.innerHTML = input.value;
 });
@@ -23,6 +26,7 @@ function imgCaptura() {
 //  https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded/27165977#27165977
 function imgCapturaFile() {
   img.src = URL.createObjectURL(this.files[0]);
+  fileName.innerHTML = this.value
 }
 
 btnFileImg.addEventListener('input', imgCapturaFile);
