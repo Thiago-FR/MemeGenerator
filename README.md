@@ -11,6 +11,7 @@
 - [Habilidades desenvolvidas](#habilidades)
 - [O que foi desenvolvido](#o-que-foi-desenvolvido)
 - [Para testar o projeto](#testar-o-projeto)
+- [Protótipo](#prototipo)
 
 ## Habilidades desenvolvidas <a name="habilidades"></a>
 
@@ -37,3 +38,7 @@
 
 2. Ou click no link abaixo e veja funcionando.
 * [PROJETO](https://thiago-fr.github.io/MemeGenerator/)
+
+## Protótipo <a name="prototipo"></a>
+
+![Protótipo](/memeGenerator.gif)
